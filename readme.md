@@ -33,9 +33,10 @@ Opções:
 	--author="parte-do-nome" para buscar pelo author
 	shortlog exibe o log resumido por autor ( $ git shortlog )
 	
-
-
-Dica: Caso receba o alerta "in the working copy of 'readme.md', LF will be replaced by CRLF the next time Git touches it
-" isso significa que o git vai tentar modificar a forma como os arquivos do projeto terminam em funçao do sistema operacional.
-Para ocultar a mensagem use o comando abaixo:
-$ git config --global core.autocrlf false
+Reset - Comando para desfazer um commit que realizado de forma errada.
+	Atenção: a hash enviada no comando deve ser a do commit anterior ao que vc deseja afetar.
+	Opções:
+	 -- soft Retorna os arquivos para o stage.
+	 -- mixed Retorna os arquivos para modified
+	 -- hard Retorna os arquivos para versão inicial antes de qualquer alteração.
+$ git reset --soft 767c54afb14c58ea64a8d3e8f05c8145c3af442b
