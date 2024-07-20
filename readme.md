@@ -23,5 +23,19 @@ $ git status
 Add = Comando para adicionar arquivos no stage. 
 $ git add <nome-do-arquivo> ou git add . ( para adicionar todos os arquivos )
 
-dica: caso apareça um warnning referente ao git tentar trocar a forma de como cada linha é terminada nos arquivos do projeto, pasta usar o comando abaixo:
+Commit - Comando para empacotar todos os arquivos em stage e salvá-los na branch atual.
+$ git commit -m "Mensagem do commit"
+ 
+Log - Comando para listar os commits realizados na branch atual.
+$ git log 
+Opções:
+	--decorate exibe mais informaóes do log
+	--author="parte-do-nome" para buscar pelo author
+	shortlog exibe o log resumido por autor ( $ git shortlog )
+	
+
+
+Dica: Caso receba o alerta "in the working copy of 'readme.md', LF will be replaced by CRLF the next time Git touches it
+" isso significa que o git vai tentar modificar a forma como os arquivos do projeto terminam em funçao do sistema operacional.
+Para ocultar a mensagem use o comando abaixo:
 $ git config --global core.autocrlf false
