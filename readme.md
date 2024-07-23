@@ -40,3 +40,10 @@ Reset - Comando para desfazer um commit que realizado de forma errada.
 	 -- mixed Retorna os arquivos para modified
 	 -- hard Retorna os arquivos para versão inicial antes de qualquer alteração.
 $ git reset --soft 767c54afb14c58ea64a8d3e8f05c8145c3af442b
+
+Branch - Comando para manipular branchs
+	Opções:
+	-b Criar uma nova branch ( $ git checkout -n nova-branch )
+	branch lista as branchs ( $ git branch )
+	checkout Navegar entre branchs ( $ git checkout branch-pra-onde-vou )
+	-D Deletar uma branch ( $ git branch -D branch-pra-deletar )
